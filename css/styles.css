@@ -142,7 +142,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    max-width: 1440px;
+    min-width: 1440px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
   rgba(46, 47, 66, 0.7)), 
     url(../images/people_office.jpg);
@@ -244,6 +244,7 @@ body {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 8px;
     margin-bottom: 8px;
 }
 
@@ -254,6 +255,20 @@ body {
     font-weight: 400;
     line-height: 1.5;
     letter-spacing: 0.02em;
+}
+
+.container-icons { 
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background: var(--cloud, #F4F4FD);
+    border: 1px solid var(--cloud, #F4F4FD);
+}
+
+.advantages-icons {
+
+    margin: 0 auto; 
+    display: flex;
 }
 
 /*----pictures----*/
@@ -379,24 +394,40 @@ body {
 /*----customers----*/
 .customers {
     padding-top: 120px;
-    padding-bottom: 280px;
-}
-
-.container-customers {
-
+    padding-bottom: 120px; 
 }
 
 .customers-box {
-    color: var(--navyblue, #2E2F42);
     text-align: center;
+    color: var(--navyblue, #2E2F42);
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    padding-bottom: 72px;
+}
+ 
+.customers-box-icons {
+    display: flex;
+    gap: 24px;
+
 }
 
+.customers-icons-logo {
+    width: 168px;
+    height: 88px;
+    padding: 16px 32px;
+    border-radius: 4px;
+    fill: var(--lightslate, #8E8F99);
+    border: 1px solid var(--lightslate, #8E8F99);
+}
+
+.customers-icons-logo:is(:hover, :focus) {
+    fill: #404BBF;
+    border: 1px solid var(--ocean, #404BBF);
+}
 
 /*----basement----*/
 .basement {
