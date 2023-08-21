@@ -175,6 +175,7 @@ body {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), 
   rgba(46, 47, 66, 0.7)), 
     url(../images/people_office.jpg);
+    background-position: center;
 }
 
 .hero-container { 
@@ -272,6 +273,7 @@ body {
     justify-content: center;
     margin-bottom: 72px;
     gap: 24px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-roll {
@@ -483,12 +485,12 @@ body {
 
 .support-card {
     display: block;
-    transition: box-shadow 250ms linear;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .support-card:is(:hover, :focus) {
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px
-     rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    box-shadow: зі значенням 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
 } 
 
  .card {
