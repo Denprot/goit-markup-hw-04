@@ -589,6 +589,7 @@ body {
 
 .footer-container {
     display: flex;
+    align-items: baseline;
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--navyblue, #2E2F42);
@@ -623,7 +624,6 @@ body {
 
 .footer-base {
     display:block;
-    padding-left: 120px;
 }
 
 .footer-social {
