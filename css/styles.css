@@ -384,10 +384,10 @@ body {
 
 /*----team----*/
 .team {
-    text-align: center;
     display: flex;
     padding-top: 120px;
     padding-bottom: 120px;
+    
 }
 
 .team {
@@ -403,6 +403,7 @@ body {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     margin-bottom: 72px;
+    text-align: center;
 }
 
 .team-list {
@@ -418,9 +419,10 @@ body {
 }
 
 .container-subtitle {
+    display: flex;
+    flex-direction: column;
     padding-top: 32px;
     padding-bottom: 32px;
-    text-align: center;
 }
 
 .team-subtitle {
@@ -431,6 +433,8 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+    text-align: center;
+    
 }
 
 .team-item-text {
@@ -441,18 +445,14 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-}
-
-.social {
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
 
 .social-media {
     display: flex;
-    gap: 24px; 
+    flex-direction: column; 
 }
-
+ 
 .social-icons {
     display: flex;
     margin: 0 auto;
@@ -608,7 +608,8 @@ body {
     line-height: 1.17;
     letter-spacing: 0,03em;
     text-transform: uppercase;
-    margin-bottom: 16px;  
+    margin-bottom: 16px;
+     
 }
 
 .footer-text {
@@ -620,7 +621,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
-   }
+}
 
 .footer-base {
     display:block;
@@ -639,7 +640,7 @@ body {
     line-height: 1.5;
     letter-spacing: 0.02em;
     margin: 0 auto;
-    padding-bottom: 16px; 
+    margin-bottom: 16px;
 }  
 
 .footer-social-icons {
