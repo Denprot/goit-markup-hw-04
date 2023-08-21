@@ -580,7 +580,7 @@ body {
     border: 1px solid var(--lightslate, #8E8F99);
 }
 
-.customers-icons-logo:is(:hover, :focus) {
+.customers-icons-box:is(:hover, :focus) {
     fill: #404BBF;
     border: 1px solid var(--ocean, #404BBF);
 }
@@ -588,10 +588,14 @@ body {
 /*----basement----*/
 
 .footer-container {
+    display: flex;
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
     background: var(--navyblue, #2E2F42);
+}
+
+.footer-logo-text {
+    margin-right: 120px
 }
 
 .header-logo-footer {
