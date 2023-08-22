@@ -660,6 +660,10 @@ button {
     background-color: #31d0aa;
     background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-icons-box {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
 /*----Model window----*/
 
 .backdrop {
@@ -706,6 +710,7 @@ button {
     left: 360px;
     width: 24px;
     height: 24px;
+    padding: 0;
     border: 1px solid rgba(0, 0, 0, 0.10);
     border-radius: 50%;
     background: var(--cornflower, #E7E9FC);
@@ -713,11 +718,17 @@ button {
     justify-content: center;
     fill: #2E2F42; 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .cross-buttom:is(:hover, :focus) {
     fill: #FFFFFF;
     background-color: var(--ocean, #404BBF);
+    border: none;
+}
+
+.cross {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .no-scroll {
